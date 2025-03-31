@@ -13,68 +13,71 @@ This is a **modern, secure, and user-friendly** online banking system built usin
 
 ## 🏗 Project Structure
 
+```
 online_banking/
-│── accounts/              # User authentication & account management
-│── admin_panel/           # Admin dashboard (Django Admin)
-│── chatbot/               # AI chatbot-related files
-│── online_bank/           # Main Django project files
-│── transactions/          # Transaction-related logic
-│── templates/             # HTML templates (base.html, deposit.html, etc.)
-│── static/                # CSS, JS, images
-│── db.sqlite3             # SQLite database
-│── manage.py              # Django management script
-│── requirements.txt       # Project dependencies
-│── README.md              # Project documentation
+│-- accounts/                 # User authentication (Login, Register, Profile)
+│-- banking/                  # Banking transactions (Deposit, Withdraw, Transfer)
+│-- chatbot/                  # Chatbot integration
+│-- templates/                # HTML templates
+│-- static/                   # CSS, JS, Images
+│-- db.sqlite3                # Database file (SQLite)
+│-- manage.py                 # Django management script
+│-- requirements.txt          # Dependencies
+│-- README.md                 # Project Documentation
+```
 
-🛠️ Tech Stack
-Frontend:
-HTML5, CSS3, Bootstrap 5
+## 🛠 Installation
 
-JavaScript
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/yourusername/online-banking.git
+   cd online-banking
+   ```
 
-Backend:
-Django 3.2 (Python)
+2. **Create & Activate a Virtual Environment**
+   ```sh
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-SQLite Database
+3. **Install Dependencies**
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-AI Chatbot:
-Natural Language Processing (NLP)
+4. **Apply Migrations**
+   ```sh
+   python manage.py migrate
+   ```
 
-Pre-trained ML Models
+5. **Create Superuser (Admin)**
+   ```sh
+   python manage.py createsuperuser
+   ```
 
-📷 Screenshots
-(Include screenshots here if available)
+6. **Run the Server**
+   ```sh
+   python manage.py runserver
+   ```
 
-🤖 AI Chatbot Integration
-The chatbot uses NLP and Machine Learning to answer user queries.
-Data sources:
+7. **Access the App**
+   - Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser.
 
-chat_responses.csv - Predefined responses
+## 📷 Screenshots
 
-qna_chitchat_profile.csv - Q&A dataset
+![Homepage](screenshots/homepage.png)
+![Deposit](screenshots/deposit.png)
+![Transaction History](screenshots/history.png)
 
-Small_talk_Intents.csv - Small talk dataset
+## 🛡 Security
 
-Chatbot scripts:
+- Uses Django’s built-in authentication & CSRF protection.
+- Secure password hashing & validation.
 
-dna.py
+## 📜 License
 
-mainML.py
-
-llmtest.py
-
-💡 Contributing
-We welcome contributions! Follow these steps:
-
-Fork the repository
-
-Create a branch (git checkout -b feature-branch)
-
-Commit changes (git commit -m "Added a new feature")
-
-Push to GitHub (git push origin feature-branch)
-
-Submit a Pull Request
-
-📜 License
 This project is licensed under the MIT License.
+
+---
+
+### 🌟 Star this repo if you found it helpful! 😊
