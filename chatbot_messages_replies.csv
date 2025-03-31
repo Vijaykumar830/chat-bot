@@ -1,0 +1,15 @@
+Message,Reply
+hello,Hello!
+hi,Hello!
+what's my balance,Your current balance is 1000.
+transfer 500 to account 123456,Transfer of 500 to account 123456 was successful.
+withdraw 200,Withdrawal of 200 was successful. Your new balance is 800.
+show my transaction history,/transactions/history/
+logout,You have been logged out.
+hi there,Hello! How can I help you today?
+check my balance,Your current balance is 1000.
+can I transfer money?,"Sure, how much do you want to transfer and to which account?"
+goodbye,Goodbye! See you next time.
+thank you,You're welcome!
+profile details,"Your profile details: Name: John, Account Number: 123456, Balance: 1000."
+who am I?,"You are John, with Account Number: 123456."
